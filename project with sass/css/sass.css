@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap");
+* {
+  font-family: "plus Jarkata Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f7fafd;
+}
+
+.container {
+  margin: 2rem;
+  width: 700px;
+  background-color: white;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+header .notification-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .notification-count {
+  background-color: #0a317b;
+  width: 35px;
+  height: 30px;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h3 {
+  font-weight: bolder;
+}
+
+header .mark-all {
+  cursor: pointer;
+}
+
+header .mark-all:hover {
+  color: #0a317b;
+}
+
+p {
+  color: #5e6778;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+main .notification-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+main .unread {
+  background-color: #e5effa !important;
+}
+
+main img {
+  width: 50px;
+}
+
+main .description {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main strong {
+  color: #1c202b;
+  cursor: pointer;
+}
+
+main strong:hover {
+  color: #0a317b;
+}
+
+main .message {
+  display: none;
+  padding: 1rem;
+  border: 1px solid #dde7ee;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: 0 0 0 5rem;
+}
+
+main .msg-div {
+  display: block;
+}
+
+main .message:hover {
+  background-color: #e5effa;
+}
+
+main .red-dot::after {
+  content: "";
+  background-color: #f65351;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+main .chess-image {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=sass.css.map */

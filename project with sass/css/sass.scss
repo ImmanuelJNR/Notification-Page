@@ -1,0 +1,171 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+$colors: (
+    // primary
+    Red: hsl(1, 90%, 64%),
+    Blue: hsl(219, 85%, 26%),
+
+    // neutral
+    White: hsl(0, 0%, 100%),
+    Very-light-grayish-blue: hsl(210, 60%, 98%),
+    Light-grayish-blue-1: hsl(211, 68%, 94%),
+    Light-grayish-blue-2: hsl(205, 33%, 90%),
+    Grayish-blue: hsl(219, 14%, 63%),
+    Dark-grayish-blue: hsl(219, 12%, 42%),
+    Very-dark-blue: hsl(224, 21%, 14%)
+);
+
+
+*{
+    font-family: "plus Jarkata Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    // min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: map-get($colors , Very-light-grayish-blue);
+}
+
+.container{
+    margin: 2rem;
+    width: 700px;
+    background-color: map-get($colors , White);
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+
+        .notification-box{
+            display: flex;
+            align-items: center;
+        }
+        .notification-count{
+            background-color: map-get($colors , Blue);
+            width: 35px;
+            height: 30px;
+            margin-left: 0.5rem;
+            font-weight: bold;
+            color: map-get($colors , White );
+            border-radius: 0.5rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center
+            
+            // border: 1px solid red;
+            // background-color: map-get($colors , );
+        };
+
+        
+        h3{
+            font-weight: bolder;    
+        }
+
+        .mark-all{
+            cursor: pointer;
+        
+        }
+        
+        .mark-all:hover{
+            color: map-get($colors , Blue);
+        }
+        
+    }
+    
+p{
+    color: map-get($colors , Dark-grayish-blue );
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .notification-card{
+        display: flex;
+        align-items: center;
+        border-radius: 0.5rem;
+
+        padding: 1rem;
+    }
+    
+    .unread{
+        background-color: map-get($colors, Light-grayish-blue-1) !important;
+
+    }
+    img{
+        width: 50px;
+    }
+
+    .description{
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    strong{
+        color: map-get($colors, Very-dark-blue);
+        cursor: pointer;
+    }
+    
+    strong:hover{
+        color: map-get($colors ,Blue);
+    }
+
+    .message{
+        display: none;
+        padding: 1rem;
+        border: 1px solid map-get($colors , Light-grayish-blue-2);
+        border-radius: 0.3rem;
+        cursor: pointer;
+        margin: 0 0 0 5rem;
+    }
+    
+
+    .message:hover{
+        background-color: map-get($colors , Light-grayish-blue-1 );
+    }
+
+    .red-dot::after{
+        content: "";
+        background-color: map-get($colors , Red);
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+    .chess-image{
+
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  
+    .container{
+        margin: 0;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
