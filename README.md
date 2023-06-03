@@ -8,8 +8,8 @@ the user is able to distinguish between unread and read notifications
 The user is able to view the optimal layout for the interface depending on their device's screen size
 
 ## Links
-Solution URL: (https://your-solution-url.com)
-Live Site URL: (https://your-live-site-url.com)
+Solution URL: (https://github.com/ImmanuelJNR/Notification-Page)
+Live Site URL: (https://notification-page-by-immanueljnr.netlify.app/)
 
 
 ### Built with
@@ -29,6 +29,6 @@ some codes I'm proud of
         background-color: map-get($colors , Light-grayish-blue-1 );
     }
  ## Author
- - Website - [Emmanuel](https://www.your-site.com)
+ - Website - [Emmanuel](https://notification-page-by-immanueljnr.netlify.app/)
 - Frontend Mentor - [@ImmanuelJNR](https://www.frontendmentor.io/profile/ImmanuelJNR)
     
